@@ -1,0 +1,77 @@
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background-color: #e8e8e8;
+  display: flex;
+  justify-content: center;
+  padding: 50px;
+}
+
+.container {
+  background-color: #ffffff;
+  padding: 35px 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+}
+
+h2 {
+  text-align: center;
+  color: #570079;
+  margin-bottom: 24px;
+  font-size: 22px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  border-bottom: 2px solid #570079;
+  padding-bottom: 12px;
+}
+
+table {
+  border-collapse: collapse;
+  width: 720px;
+}
+
+th, td {
+  border: 1px solid #cccccc;
+  padding: 13px 16px;
+  text-align: center;
+  font-size: 14px;
+}
+
+thead th {
+  background-color: #570079;
+  color: #ffffff;
+  font-size: 13px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+tbody tr td:first-child {
+  background-color: #570079;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 13px;
+  letter-spacing: 1px;
+  width: 85px;
+}
+
+tbody tr:nth-child(odd) td {
+  background-color: #ffffff;
+  color: #444444;
+}
+
+tbody tr:nth-child(even) td {
+  background-color: #fdf3ee;
+  color: #444444;
+}
+
+tbody tr td:first-child {
+  background-color: #570079;
+  color: #ffffff;
+}
+
+tbody tr:hover td {
+  background-color: #ffe0cc;
+}
+
+tbody tr:hover td:first-child {
+  background-color: #9900cc;
+}
