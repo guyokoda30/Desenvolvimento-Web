@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Formulário de Cadastro</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<div class="card">
+  <div class="card-header">
+    <h1>Cadastro</h1>
+    <p>Preencha os campos abaixo para criar sua conta.</p>
+  </div>
+
+  <form>
+    <div class="row">
+      <div class="field">
+        <label for="nome">Nome completo</label>
+        <input type="text" id="nome" placeholder="Seu nome" />
+      </div>
+      <div class="field">
+        <label for="email">E-mail</label>
+        <input type="email" id="email" placeholder="email@exemplo.com" />
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="field">
+        <label for="senha">Senha</label>
+        <input type="password" id="senha" placeholder="••••••••" />
+      </div>
+      <div class="field">
+        <label for="nascimento">Data de nascimento</label>
+        <input type="date" id="nascimento" />
+      </div>
+    </div>
+
+    <hr class="divider" />
+
+    <div class="field">
+      <label for="curso">Curso</label>
+      <select id="curso">
+        <option value="" disabled selected>Selecione seu curso</option>
+        <option>Sistemas de Informação</option>
+        <option>Ciência da Computação</option>
+        <option>Engenharia de Software</option>
+        <option>Análise e Desenvolvimento de Sistemas</option>
+        <option>Outro</option>
+      </select>
+    </div>
+
+    <div class="field">
+      <span class="group-label">Sexo</span>
+      <div class="radio-group">
+        <label class="radio-item">
+          <input type="radio" name="sexo" value="masculino" /> Masculino
+        </label>
+        <label class="radio-item">
+          <input type="radio" name="sexo" value="feminino" /> Feminino
+        </label>
+        <label class="radio-item">
+          <input type="radio" name="sexo" value="outro" /> Outro
+        </label>
+        <label class="radio-item">
+          <input type="radio" name="sexo" value="nao_informar" /> Prefiro não informar
+        </label>
+      </div>
+    </div>
+
+    <div class="field">
+      <span class="group-label">Interesses</span>
+      <div class="check-group">
+        <label class="check-item"><input type="checkbox" value="tecnologia" /> Tecnologia</label>
+        <label class="check-item"><input type="checkbox" value="design" /> Design</label>
+        <label class="check-item"><input type="checkbox" value="ciencias" /> Ciências</label>
+        <label class="check-item"><input type="checkbox" value="artes" /> Artes</label>
+        <label class="check-item"><input type="checkbox" value="esportes" /> Esportes</label>
+        <label class="check-item"><input type="checkbox" value="musica" /> Música</label>
+      </div>
+    </div>
+
+    <hr class="divider" />
+
+    <div class="field">
+      <label for="comentarios">Comentários</label>
+      <textarea id="comentarios" placeholder="Escreva algo sobre você..."></textarea>
+    </div>
+
+    <div class="field">
+      <label for="foto">Upload de foto</label>
+      <input type="file" id="foto" accept="image/*" />
+    </div>
+
+    <div class="actions">
+      <button type="reset" class="btn-secondary">Limpar</button>
+      <button type="submit" class="btn-primary">Enviar cadastro</button>
+    </div>
+  </form>
+</div>
+
+</body>
+</html>
